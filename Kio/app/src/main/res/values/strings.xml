@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kio</string>
+    <string name="bttn_load_url">Home</string>
+    <string name="bttn_back">Back</string>
+    <string name="bttn_forward">Forward</string>
+    <string name="nav_bar">Nav Bar</string>
+    <string name="bttn_power">Power Button</string>
+    <string name="bttn_home">Home</string>
+    <string name="img_logo">Logo</string>
+</resources>

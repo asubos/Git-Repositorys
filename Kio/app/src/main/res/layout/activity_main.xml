@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#edfaed"
+        android:padding="0dp"
+        android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimaryDark"
+            android:contentDescription="@string/img_logo"
+            android:cropToPadding="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/ic_birdsonglite_logo" />
+
+        <TextClock
+            android:id="@+id/textClock1"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+
+
+            android:layout_weight="1"
+            android:autoLink="all"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto_medium"
+            android:format12Hour="hh:mm: a"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color_primary"
+            android:textSize="34sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@android:color/background_light"
+        android:theme="@style/AppTheme">
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/bttn_home"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_bttn_home_sml" />
+
+        <Button
+            android:id="@+id/button_load"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_bttn_home_sml"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/bttn_load_url"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_primary"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_bttn_back_sml"
+            android:enabled="false"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/bttn_back"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_forward"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/bttn_forward"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
